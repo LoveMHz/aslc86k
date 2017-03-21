@@ -14,9 +14,8 @@ all : $(TARGET)
 
 clean :
 	-$(RM) *.o *~ core
-	-$(RM) $(TARGET) asmgen sieve
-	-$(RM) lexer.c
-	-$(RM) gram.c gram.h y.tab.c y.tab.h y.output
+	-$(RM) $(TARGET) sieve
+	-$(RM) y.tab.c y.tab.h y.output
 	-$(RM) aglexer.c aggram.c aggram.h
 
 $(TARGET) : $(OBJS)
